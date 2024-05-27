@@ -9,3 +9,6 @@ Los lenguajes utilizados son Java y para la parte visual JavaFX (De una manera s
 
 # BBDD
 Para las BBDD he utilizado MySQL
+
+# Notas:
+App realizada como TFG del grado superior de desarrollo de aplicaciones multiplataforma
