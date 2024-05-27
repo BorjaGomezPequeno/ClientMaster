@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.clientmaster.clientmaster.controllers.ClientesController">
+
+    <TableView fx:id="tablaClientes">
+
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNombre" text="Nombre Cliente" prefWidth="200"/>
+            <TableColumn fx:id="colMunicipio" text="Municipio" prefWidth="150"/>
+            <TableColumn fx:id="colProvincia" text="Provincia" prefWidth="150"/>
+            <TableColumn fx:id="colDireccion" text="Direccion" prefWidth="300"/>
+            <TableColumn fx:id="colCp" text="C.P." prefWidth="50"/>
+            <TableColumn fx:id="colTelefono" text="Telefono" prefWidth="100"/>
+            <TableColumn fx:id="colContacto" text="Contacto" prefWidth="150"/>
+            <TableColumn fx:id="colTipoServicio" text="Tipo de servicio" prefWidth="150"/>
+            <TableColumn fx:id="colPrecio" text="Precio" prefWidth="50"/>
+            <TableColumn fx:id="colRazonSocial" text="Razon Social" prefWidth="150"/>
+            <TableColumn fx:id="colCuentaBancaria" text="Cuenta bancaria" prefWidth="200"/>
+
+
+
+
+        </columns>
+
+    </TableView>
+
+</StackPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.clientmaster.clientmaster.controllers.FacturasController"
+      prefHeight="720.0" prefWidth="1080.0">
+
+    <TableView fx:id="tablaFacturas">
+        <columns>
+            <TableColumn fx:id="idFactura" text="ID Factura" prefWidth="80">
+                <cellValueFactory>
+                    <PropertyValueFactory property="idFactura"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="dia" text="Día" prefWidth="50">
+                <cellValueFactory>
+                    <PropertyValueFactory property="dia"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="mes" text="Mes" prefWidth="80">
+                <cellValueFactory>
+                    <PropertyValueFactory property="mes"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="ano" text="Año" prefWidth="80">
+                <cellValueFactory>
+                    <PropertyValueFactory property="ano"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="id_cliente" text="ID Cliente" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="idCliente"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="nombreCliente" text="Nombre Cliente" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="nombreCliente"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="tipoServicio" text="Tipo de Servicio" prefWidth="120">
+                <cellValueFactory>
+                    <PropertyValueFactory property="tipoServicio"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="precio" text="Precio" prefWidth="80">
+                <cellValueFactory>
+                    <PropertyValueFactory property="precio"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="concepto" text="Concepto" prefWidth="150">
+                <cellValueFactory>
+                    <PropertyValueFactory property="concepto"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+
+</VBox>

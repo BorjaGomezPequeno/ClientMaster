@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.clientmaster.clientmaster.controllers.AddFacturaController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="Nombre Cliente" />
+    <ComboBox fx:id="cmbNombreCliente" />
+
+    <Label text="Tipo de Servicio" />
+    <ComboBox fx:id="cmbTipoServicio" />
+
+    <Label text="Precio" />
+    <TextField fx:id="txtPrecio" />
+
+    <Label text="Concepto" />
+    <TextField fx:id="txtConcepto" />
+
+    <Label text="Dia" />
+    <TextField fx:id="txtDia" />
+
+    <Label text="Mes" />
+    <ComboBox fx:id="cmbMes" />
+
+    <Label text="Año" />
+    <TextField fx:id="txtAno" />
+
+    <Button text="Agregar Factura" onAction="#agregarFactura" />
+
+
+</VBox>

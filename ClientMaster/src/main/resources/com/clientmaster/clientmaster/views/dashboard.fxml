@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane fx:id="stackPane" prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clientmaster.clientmaster.controllers.Dashboard">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1d0422" height="735.0" stroke="BLACK" strokeType="INSIDE" width="1115.0" />
+      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefWidth="1115.0" StackPane.alignment="TOP_LEFT">
+        <menus>
+          <Menu mnemonicParsing="false" text="File" />
+            <Menu mnemonicParsing="false" text="Clientes">
+                <items>
+                    <MenuItem fx:id="verClientesMenuItem" mnemonicParsing="false" onAction="#mostrarClientes" text="Ver Clientes" />
+                    <MenuItem fx:id="agregarClientesMenuItem" mnemonicParsing="false" onAction="#agregarClientes" text="Agregar Cliente" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Facturación">
+              <items>
+                <MenuItem fx:id="verFacturasMenuItem" mnemonicParsing="false" onAction="#verFacturas" text="Ver facturas" />
+                  <MenuItem fx:id="agregarFacturaMenuItem" mnemonicParsing="false" onAction="#agregarFacturas" text="Nueva factura" />
+                  <MenuItem fx:id="facturacionMenuItem" mnemonicParsing="false" onAction="#verFacturacion" text="Facturación" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Usuario" />
+        </menus>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </MenuBar>
+      <ImageView fitHeight="197.0" fitWidth="611.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TaskMasterLogo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="647.0" fitWidth="1117.0" layoutX="262.0" layoutY="303.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/FondoLogin.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>
